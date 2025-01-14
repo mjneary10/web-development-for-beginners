@@ -1,10 +1,12 @@
+/* These colors are in HEX value */
 .html-colors {
   background-color: #fad7bd;
 }
-
+/* These colors are RGB */
 .css-colors {
   background-color: rgb(205, 205, 243);
 }
+/* These colors are also in RGB */
 .javascript-colors {
   background-color: rgb(236, 236, 123);
 }
