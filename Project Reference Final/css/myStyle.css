@@ -1,0 +1,150 @@
+/* ------------------------------------ */
+/* General css that applys to all pages */
+/* ------------------------------------ */
+/*
+html {
+  scroll-behavior:smooth
+}
+@keyframes scale-a-lil {
+  from {
+    scale: 0.8;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  section {
+    animation: scale-a-lil linear both;
+    animation-timeline: view();
+    animation-range: 25vh 75vh;
+  }
+}
+
+.box{
+  background-color: #529ce6;
+ 
+  margin: 100px;
+  border-radius: 10px;
+  transition: transform 1s;
+}
+
+.box:hover{
+  transform: scale(1.2);
+}
+  */
+body {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 16px;
+  color: black;
+}
+/* ------------------------------------ */
+/* Colors ----------------------------- */
+/* ------------------------------------ */
+.html-colors {
+  background-color: #fad7bd;
+}
+.css-colors {
+  background-color: rgb(205, 205, 243);
+}
+.javascript-colors {
+  background-color: rgb(236, 236, 123);
+}
+/* ------------------------------------ */
+/* headings --------------------------- */
+/* ------------------------------------ */
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+h1 {
+  font-size: 2em;
+}
+h2 {
+  font-size: 1.5em;
+}
+/* ------------------------------------ */
+/* links ------------------------------ */
+/* ------------------------------------ */
+/* unvisited link */
+a:link {
+  color: red;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(239, 18, 128);
+  text-decoration: underline;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+/* ------------------------------------ */
+/* reuseable classes ------------------ */
+/* ------------------------------------ */
+/* images */
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
+.img-opacity {
+  opacity: 0.5;
+}
+/* borders */
+.border-radius {
+  border-radius: 10px;
+}
+/* margins and padding */
+.margin-top-bottom {
+  margin: 90px 0;
+}
+.padding {
+  padding: 50px;
+}
+/* lists */
+ul {
+  background-color: white;
+  padding: 30px;
+}
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 5px 10px;
+  text-align: center;
+  border: 1px solid;
+}
+.btn-nav {
+  background-color: rgb(198, 198, 240);
+}
+.btn-nav:hover {
+  background-color: white;
+  text-decoration: none;
+}
+/* active button */
+.active {
+  background-color: white;
+}
+/* ------------------------------------ */
+/* intro on top of page --------------- */
+/* ------------------------------------ */
+.intro {
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: center;
+}
+/* ------------------------------------ */
+/* footer */
+/* ------------------------------------ */
+footer {
+  background-color: #529ce6;
+  color: white;
+  text-align: center;
+  font-size: 3em;
+}
