@@ -5,21 +5,32 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <link rel="stylesheet" href="css/myStyle.css">
       <link rel="stylesheet" href="css/examplesCSS.css">
+      <script src="js/myJs.js"></script>
       <title>Web Development Reference Project</title>
    </head>
    <body>
-      <header>
-         <img src="img/banner.jpg" class="img-responsive img-style" alt="this is the main banner image" width="1900" height="150">
-         <nav class="margin-small-t-b">
-            <ul class="list-reset">
-               <li><a href="index.html" class="btn btn-nav ">Home</a></li>
-               <li><a href="index.html#html" class="btn btn-nav">HTML Reference</a></li>
-               <li><a href="index.html#css" class="btn btn-nav">CSS Reference</a></li>
-               <li><a href="index.html#javascript" class="btn btn-nav">Javascript Reference</a></li>
-               <li><a href="examples.html" class="btn btn-nav active">Examples</a></li>
-            </ul>
-         </nav>
-      </header>
+     <header>
+      <nav>
+        <ul class="topnav" id="myTopnav">
+          <!-- The function closeMenu() will close the mobile dropdown when a link is clicked -->
+          <li><a href="/#home" onclick="closeMenu()">Home</a></li>
+          <li><a href="/#html" onclick="closeMenu()">HTML</a></li>
+          <li><a href="/#css" onclick="closeMenu()">CSS</a></li>
+          <li><a href="/#javascript" onclick="closeMenu()">Javascript</a></li>
+          <li><a href="examples.html" onclick="closeMenu()">Examples</a></li>
+
+          <!-- This link is the mobile menu dropdown icon -->
+          <li class="burger">
+            <a href="javascript:void(0);" title="navbar for mobile" onclick="navFunction()">
+              <div class="burger-bar"></div>
+              <div class="burger-bar"></div>
+              <div class="burger-bar"></div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <img src="img/banner.jpg" class="img-responsive img-style" alt="this is the main banner image" width="1900" height="150" />
+    </header>
       <!-- ------------------------------------------------------------------- -->
       <!-- Positioning Example -------------------------------------------------->
       <!-- ------------------------------------------------------------------- -->
@@ -125,10 +136,7 @@
       <hr>
       <h2>Mobile Navigation Example</h2>
       <hr>
-    
-      
-      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      
+    <p>Just see the main site navigation in the html files and in the CSS file myStyle.css </p>
      
    </body>
 </html>
