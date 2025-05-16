@@ -1,0 +1,123 @@
+/* ---------------------------------------------------------------------------- */
+/* Positioning Example -------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* Lets create a container for our test div */
+.positioning-container{
+    width: 20em;
+    height: 20em;
+    border: 1px solid black;
+ }
+ /* Lets create our positioning div */
+ .positioning-div{
+    width: 10em;
+    height: 10em;
+    background-color: antiquewhite;
+ }
+ /* Substitute these classes into the positioning div to see how each one works */
+ .position-relative{
+    position: relative;
+    left: 1em;
+    top: 2em;
+ }
+ .position-fixed{
+    position: fixed;
+    left: 1em;
+    top: 2em;
+ }
+ .position-absolute{
+    position: absolute;
+    top: 0;
+    right: 0;
+ }
+ .position-sticky{
+    position: sticky;
+    top: 0;
+ }
+/* ---------------------------------------------------------------------------- */
+/* CSS Float Example -------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+/* Lets create the float object */
+.float-object{
+   background-color: aquamarine;
+   width: fit-content;
+   float:right; /* try float:left, float:none */
+   
+}
+/* ---------------------------------------------------------------------------- */
+/* CSS Flexbox Example -------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+.flex-example-container{
+   height: 400px;
+   width: 100%;
+   background-color: antiquewhite;
+}
+.flex-example-item{
+   background-color: aquamarine;
+   padding: 1em;
+}
+.flex-row-example{
+   display: flex;
+   flex-direction: row;
+   justify-content:space-between; /* Horizontal alignment when flex direction is ROW*/
+   align-items:center; /* Vertical alignment when flex direction is ROW */
+}
+.flex-column-example{
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between; /* Vertical alignment when flex direction is COLUMN */
+   align-items:center; /* Horizontal alignmnet when flex direction is COLUMN */
+}
+.flex-align-self{
+   align-self:flex-start;
+}
+/* ---------------------------------------------------------------------------- */
+/* CSS Grid Example -------------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+.grid-example-main{
+   display: grid;
+   grid-template-columns: 1fr minmax(auto, 40em) 1fr;
+}
+.grid-example-content{
+   grid-column: 2/3;
+   border: 1px solid black;
+   text-align: center;
+}
+
+
+
+
+
+
+/* ---------------------------------------------------------------------------- */
+/* CSS Root Variables Example ------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
+:root {
+	--color-main: #ea4d4d;
+	--color-secondary: rgb(176, 173, 173);
+	--height-section: 20em;
+}
+.color-main{
+   background-color: var(--color-main);
+}
+.color-secondary{
+   background-color: var(--color-secondary);
+}
+.height-section{
+   min-height: var(--height-section);
+}
+/* ---------------------------------------------------------------------------- */
+/* Media Queries Responsive Design Example ------------------------------------ */
+/* ---------------------------------------------------------------------------- */
+.media-query-example{
+   width: 100%;
+   height: 5em;
+   background-color: orange;
+}
+@media screen and (max-width:700px) {
+   .media-query-example{
+       background-color: #ea4d4d;
+   }
+}
+/* ---------------------------------------------------------------------------- */
+/* Mobile Navigation Example -------------------------------------------------- */
+/* ---------------------------------------------------------------------------- */
